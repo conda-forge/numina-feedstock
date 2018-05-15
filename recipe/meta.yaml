@@ -113,7 +113,7 @@ about:
     Building the documentation\n--------------------------\nThe Numina documentation is based on `sphinx`_. With the package installed,\nthe html documentation can be built from the `doc` directory::\n\n\
     \  $ cd doc\n  $ make html\n\nThe documentation will be copied to a directory under `build/sphinx`. \n\nThe documentation can be built in different formats. The complete list will appear\nif you type\
     \ `make` \n\n.. _virtualenv: http://pypi.python.org/pypi/virtualenv\n.. _sphinx: http://sphinx.pocoo.org\n\n.. |docs| image:: https://readthedocs.org/projects/numina/badge/?version=latest\n    :alt:\
-    \ Documentation Status\n    :target: http://numina.readthedocs.org/en/latest/?badge=latest\n\n.. |zenodo| image:: https://zenodo.org/badge/13088/guaix-ucm/numina.svg\n   :target: http://dx.doi.org/10.5281/zenodo.17986\n\
+    \ Documentation Status\n    :target: http://numina.readthedocs.org/en/latest/?badge=latest\n\n.. |zenodo| image:: https://zenodo.org/badge/13088/guaix-ucm/numina.svg\n   :target: https://doi.org/10.5281/zenodo.17986\n\
     \n\n"
   doc_url: http://numina.readthedocs.io/
   dev_url: https://github.com/guaix-ucm/numina
