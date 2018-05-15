@@ -110,7 +110,7 @@ if you type `make`
     :target: http://numina.readthedocs.org/en/latest/?badge=latest
 
 .. |zenodo| image:: https://zenodo.org/badge/13088/guaix-ucm/numina.svg
-   :target: http://dx.doi.org/10.5281/zenodo.17986
+   :target: https://doi.org/10.5281/zenodo.17986
 
 
 
