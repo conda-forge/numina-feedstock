@@ -97,24 +97,11 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE.txt
-  summary: Numina reduction package
-  description: "======\nNumina\n======\n\n|zenodo| |docs| \n\n.. image:: https://travis-ci.org/guaix-ucm/numina.svg?branch=master\n    :target: https://travis-ci.org/guaix-ucm/numina\n\n.. image:: https://coveralls.io/repos/guaix-ucm/numina/badge.svg?branch=master&service=github\
-    \ \n    :target: https://coveralls.io/github/guaix-ucm/numina?branch=master \n\nThis is Numina, the data reduction package used by the following GTC\ninstruments: EMIR, FRIDA, MEGARA and MIRADAS.\n\n\
-    Numina is distributed under GNU GPL, either version 3 of the License, \nor (at your option) any later version. See the file LICENSE.txt for \ndetails.\n\nRequirements\n------------\n\nPython 2.7 or\
-    \ Python >= 3.4 is required. Numina requires the following\npackages installed in order to work properly:\n\n - setuptools (http://pythonhosted.org/setuptools/)\n - six >= 1.7 (https://pythonhosted.org/six/)\n\
-    \ - numpy >= 1.6 (http://numpy.scipy.org/) \n - scipy (http://www.scipy.org)\n - astropy >= 1.0 (http://www.astropy.org/)\n - PyYaml (http://pyyaml.org/)\n - dateutil (https://pypi.org/project/python-dateutil/)\n\
-    \nFor Python 2.7, the following compatibility packages are required:\n  - singledispatch (https://pypi.python.org/pypi/singledispatch)\n  - enum34 (https://pypi.org/project/enum34/)\n\nThe documentation\
-    \ of the project is generated using Sphinx (http://sphinx.pocoo.org/)\n\nAdditional packages are optionally required:\n - sphinx (http://sphinx-doc.org) to build the documentation\n - pytest (http://pytest.org)\
-    \ for testing\n - pytest-benchmark (https://github.com/ionelmc/pytest-benchmark/) for \n   benchmarks of certain algorithms\n\nWebpage: https://guaix.fis.ucm.es/projects/numina\nMaintainer: sergiopr@fis.ucm.es\n\
-    \n\nStable version\n--------------\n\nThe latest stable version of Numina can be downloaded from  \nhttps://pypi.python.org/pypi/numina\n\nTo install numina, use the standard installation procedure:::\n\
-    \n    $ tar zxvf numina-X.Y.Z.tar.gz\n    $ cd numina-X.Y.Z\n    $ python setup.py install\n\n\nThe `install` command provides options to change the target directory. By default\ninstallation requires\
-    \ administrative privileges. The different installation options\ncan be checked with::: \n\n   $ python setup.py install --help\n\nDevelopment version\n-------------------\n\nThe development version\
-    \ can be checked out with:::\n\n    $ git clone https://github.com/guaix-ucm/numina.git\n\nAnd then installed following the standard procedure:::\n\n    $ cd numina\n    $ python setup.py install\n\n\
-    Building the documentation\n--------------------------\nThe Numina documentation is based on `sphinx`_. With the package installed,\nthe html documentation can be built from the `doc` directory::\n\n\
-    \  $ cd doc\n  $ make html\n\nThe documentation will be copied to a directory under `build/sphinx`. \n\nThe documentation can be built in different formats. The complete list will appear\nif you type\
-    \ `make` \n\n.. _virtualenv: http://pypi.python.org/pypi/virtualenv\n.. _sphinx: http://sphinx.pocoo.org\n\n.. |docs| image:: https://readthedocs.org/projects/numina/badge/?version=latest\n    :alt:\
-    \ Documentation Status\n    :target: http://numina.readthedocs.org/en/latest/?badge=latest\n\n.. |zenodo| image:: https://zenodo.org/badge/13088/guaix-ucm/numina.svg\n   :target: https://doi.org/10.5281/zenodo.17986\n\
-    \n\n"
+  summary: Astronomy data reduction library
+  description: |
+    Numina is a data reduction library for astronomy
+    used by the following Gran Telescopio Canarias 
+    instruments: EMIR, FRIDA, MEGARA and MIRADAS.
   doc_url: http://numina.readthedocs.io/
   dev_url: https://github.com/guaix-ucm/numina
 
