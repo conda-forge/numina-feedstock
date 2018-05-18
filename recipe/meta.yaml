@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   entry_points:
     - numina = numina.user.cli:main
