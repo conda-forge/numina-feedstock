@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
   entry_points:
     - numina = numina.user.cli:main
@@ -27,16 +27,18 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - pip
-    - toolchain
-    - numpy 1.11.*
+    - numpy
     - python
     - setuptools
   run:
     - python
     - setuptools
     - six >=1.7
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - astropy >=1.3
     - scipy
     - pyyaml
@@ -100,7 +102,7 @@ about:
   summary: Astronomy data reduction library
   description: |
     Numina is a data reduction library for astronomy
-    used by the following Gran Telescopio Canarias 
+    used by the following Gran Telescopio Canarias
     instruments: EMIR, FRIDA, MEGARA and MIRADAS.
   doc_url: http://numina.readthedocs.io/
   dev_url: https://github.com/guaix-ucm/numina
