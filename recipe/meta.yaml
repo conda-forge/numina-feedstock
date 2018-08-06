@@ -1,8 +1,8 @@
 {% set name = "numina" %}
-{% set version = "0.16.2" %}
+{% set version = "0.17.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "188410d09075a367a4de0764949ee28cebd37cc0179c672420167220d05ca302" %}
+{% set hash_value = "476ac5608888f3b922ab25f4e707f24f5766860c40e13471387efe0e5bd0bd66" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win]
   entry_points:
     - numina = numina.user.cli:main
