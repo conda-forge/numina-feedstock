@@ -15,7 +15,6 @@ source:
 
 build:
   number: 1000
-  skip: True  # [win]
   entry_points:
     - numina = numina.user.cli:main
     - numina-bpm = numina.array.bpm:main
