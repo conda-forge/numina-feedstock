@@ -84,7 +84,7 @@ test:
     - numina.util.tests
   commands:
     - numina --help
-    - py.test --pyargs numina
+#    - py.test --pyargs numina
   requires:
     - pytest
 
