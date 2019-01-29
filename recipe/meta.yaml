@@ -84,11 +84,6 @@ test:
     - numina.util.tests
   commands:
     - numina --help
-    - numina-bpm --help
-    - numina-imath --help
-    - numina-wavecalib --help
-    - numina-ximshow --help
-    - numina-ximplotxy --help
     - py.test --pyargs numina
   requires:
     - pytest
