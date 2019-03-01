@@ -1,8 +1,8 @@
 {% set name = "numina" %}
-{% set version = "0.19" %}
+{% set version = "0.20" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "e85db54cd4394dd34a78bcaa6bb87368190247c58f84e4a1120d49f8f3eece1c" %}
+{% set hash_value = "fd777c9adeae8a861ed38c0cd960f48b1d5ae55d08acb6ec7c82a1fb7c628af4" %}
 
 package:
   name: '{{ name|lower }}'
