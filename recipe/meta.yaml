@@ -68,14 +68,20 @@ test:
     - numina.ext.gtc
     - numina.frame
     - numina.frame.tests
+    - numina.instrument
+    - numina.instrument.components
+    - numina.instrument.components.tests
+    - numina.instrument.simulation
+    - numina.instrument.tests
     - numina.modeling
     - numina.modeling.tests
-    - numina.simulation
+    - numina.processing
     - numina.store
     - numina.store.gtc
     - numina.store.tests
     - numina.tests
     - numina.tools
+    - numina.tools.tests
     - numina.types
     - numina.types.tests
     - numina.user
