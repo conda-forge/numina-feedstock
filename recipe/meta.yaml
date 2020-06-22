@@ -1,20 +1,17 @@
 {% set name = "numina" %}
-{% set version = "0.21" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "8c13a3a9f3a48cdf675b1671607157d5df7979d994c0eba521296edd0a88a9a3" %}
+{% set version = "0.22.2" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ca43b4bf07f24eb9060b2924261c2524445638aaea4f6d9f62e3df44de0fd6c7
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - numina = numina.user.cli:main
     - numina-apply_integer_offsets = numina.array.wavecalib.apply_integer_offsets:main
@@ -28,7 +25,7 @@ build:
     - numina-wavecalib = numina.array.wavecalib.__main__:main
     - numina-ximshow = numina.array.display.ximshow:main
     - numina-ximplotxy = numina.array.display.ximplotxy:main
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
