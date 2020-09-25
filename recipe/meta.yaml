@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.22.3" %}
+{% set version = "0.23.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9f06661bb819fd35c2ced2382bb60cdffcffae3410606929b7bc0536a435b674
+  sha256: bb9a61d6541f342fcc91ead2ed33b9b89156c339628b5e5fb0761a5451b18a4a
 
 build:
   number: 0
@@ -36,6 +36,7 @@ requirements:
     - numpy
     - python
     - setuptools
+    - cython
   run:
     - python
     - setuptools
