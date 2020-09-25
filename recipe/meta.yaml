@@ -36,6 +36,7 @@ requirements:
     - numpy
     - python
     - setuptools
+    - cython
   run:
     - python
     - setuptools
