@@ -5,9 +5,13 @@ Home: http://guaix.fis.ucm.es/projects/numina
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numina-feedstock/blob/master/LICENSE.txt)
 
 Summary: Astronomy data reduction library
+
+Development: https://github.com/guaix-ucm/numina
+
+Documentation: http://numina.readthedocs.io/
 
 Numina is a data reduction library for astronomy
 used by the following Gran Telescopio Canarias
