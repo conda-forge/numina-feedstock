@@ -11,7 +11,7 @@ source:
   sha256: bb9a61d6541f342fcc91ead2ed33b9b89156c339628b5e5fb0761a5451b18a4a
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - numina = numina.user.cli:main
     - numina-apply_integer_offsets = numina.array.wavecalib.apply_integer_offsets:main
@@ -46,7 +46,7 @@ requirements:
     - scipy
     - scikit-image
     - pyyaml
-    - matplotlib
+    - matplotlib-base
     - enum34  # [py27]
     - contextlib2  # [py27]
     - python-dateutil
