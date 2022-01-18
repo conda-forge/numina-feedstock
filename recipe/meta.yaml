@@ -47,8 +47,6 @@ requirements:
     - scikit-image
     - pyyaml
     - matplotlib
-    - enum34  # [py27]
-    - contextlib2  # [py27]
     - python-dateutil
     - lmfit
 
