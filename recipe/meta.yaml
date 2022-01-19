@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.23.2" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb9a61d6541f342fcc91ead2ed33b9b89156c339628b5e5fb0761a5451b18a4a
+  sha256: 7d8bbfa6a2dfe96dd0dc29af305e72dc8ffc732299c53ace905ad0bb5baf8550
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - numina = numina.user.cli:main
     - numina-apply_integer_offsets = numina.array.wavecalib.apply_integer_offsets:main
