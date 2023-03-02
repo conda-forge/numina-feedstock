@@ -1,11 +1,11 @@
-About numina
-============
+About numina-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numina-feedstock/blob/main/LICENSE.txt)
 
 Home: http://guaix.fis.ucm.es/projects/numina
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/numina-feedstock/blob/main/LICENSE.txt)
 
 Summary: Astronomy data reduction library
 
