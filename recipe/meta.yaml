@@ -40,11 +40,10 @@ requirements:
     - pip
     - numpy
     - python
-    - setuptools
+    - setuptools_scm >=6.2
     - cython
   run:
     - python
-    - setuptools >=39.2
     - {{ pin_compatible('numpy') }}
     - astropy >=2
     - scipy
@@ -53,6 +52,8 @@ requirements:
     - matplotlib-base
     - python-dateutil
     - lmfit
+    - importlib-resources
+    - backports-entry-points-selectable
 
 test:
   imports:
