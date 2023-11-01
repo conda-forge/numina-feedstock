@@ -53,7 +53,7 @@ requirements:
     - python-dateutil
     - lmfit
     - importlib-resources
-    - backports-entry-points-selectable
+    - backports.entry-points-selectable
 
 test:
   imports:
