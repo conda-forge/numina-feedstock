@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.31.0" %}
+{% set version = "0.32.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1a97c7af393bb0b301b7a11d139693eb6a44d82b963f59d9d39931c094cd0cd5
+  sha256: 9dd824f3dd2779f0ed6c777d1cc9fa95a169f09f593cfd57aa25f7d4285d3dc3
 
 build:
   number: 0
@@ -41,10 +41,10 @@ requirements:
     - numpy
     - python
     - setuptools
+    - setuptools_scm >=6.2
     - cython
   run:
     - python
-    - setuptools >=39.2
     - {{ pin_compatible('numpy') }}
     - astropy >=2
     - scipy
@@ -53,6 +53,8 @@ requirements:
     - matplotlib-base
     - python-dateutil
     - lmfit
+    - importlib-resources
+    - backports.entry-points-selectable
 
 test:
   imports:
