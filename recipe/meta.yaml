@@ -11,7 +11,7 @@ source:
   sha256: 9dd824f3dd2779f0ed6c777d1cc9fa95a169f09f593cfd57aa25f7d4285d3dc3
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   entry_points:
     - numina = numina.user.cli:main
