@@ -46,7 +46,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - astropy >=2
+    - astropy
     - scipy
     - scikit-image
     - pyyaml
@@ -55,6 +55,7 @@ requirements:
     - lmfit
     - importlib-resources
     - backports.entry-points-selectable
+    - attrs
 
 test:
   imports:
@@ -106,7 +107,7 @@ test:
     - pytest
 
 about:
-  home: http://guaix.fis.ucm.es/projects/numina
+  home: https://github.com/guaix-ucm/numina
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
