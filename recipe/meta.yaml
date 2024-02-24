@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.32.3" %}
+{% set version = "0.33" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9dd824f3dd2779f0ed6c777d1cc9fa95a169f09f593cfd57aa25f7d4285d3dc3
+  sha256: b36add13a9de7550483e455f8b4319aeaa8612e21b4982b24c8b369031f800ce
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   entry_points:
     - numina = numina.user.cli:main
@@ -46,7 +46,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - astropy >=2
+    - astropy
     - scipy
     - scikit-image
     - pyyaml
@@ -55,6 +55,7 @@ requirements:
     - lmfit
     - importlib-resources
     - backports.entry-points-selectable
+    - attrs
 
 test:
   imports:
@@ -106,7 +107,7 @@ test:
     - pytest
 
 about:
-  home: http://guaix.fis.ucm.es/projects/numina
+  home: https://github.com/guaix-ucm/numina
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
