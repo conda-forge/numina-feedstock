@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.33" %}
+{% set version = "0.34" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b36add13a9de7550483e455f8b4319aeaa8612e21b4982b24c8b369031f800ce
+  sha256: a07fc407cdc68fe2d9767339a12b889acdd29fdd5da9459f02874d25782b0c6a
 
 build:
   number: 0
@@ -35,6 +35,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - pip
