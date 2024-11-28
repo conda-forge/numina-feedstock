@@ -11,7 +11,7 @@ source:
   sha256: 9e25735cfa0973b525890c876280427d179ad9c6a88603690d357bc35acae040
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   entry_points:
     - numina = numina.user.cli:main
@@ -46,7 +46,7 @@ requirements:
     - cython
   run:
     - python
-    - astropy
+    - astropy-base
     - scipy
     - scikit-image
     - pyyaml
