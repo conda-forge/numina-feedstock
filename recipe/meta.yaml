@@ -1,5 +1,5 @@
 {% set name = "numina" %}
-{% set version = "0.37.1" %}
+{% set version = "0.40.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 017b6877d11cfe8e6e4e1f6c76d069078abcde673299b920eb825754b459b2c3
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0425e11949e8b1d7fe9ae725bcbd03b25f744914667fac4460d627f7d9cdf808
 
 build:
   number: 0
